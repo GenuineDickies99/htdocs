@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+# Allow crawling of all content
+Disallow:
+
+# Sitemap location
+Sitemap: https://www.wkroadside.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 5
+
+# Additional rules
+Allow: /*.php$
+Allow: /*.html$
+Allow: /*.css$
+Allow: /*.js$
+Allow: /images/
+
+# Prevent crawling of potential sensitive areas
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /test.php
+Disallow: /blog-test.php
+Disallow: /phpinfo.php
+
+# Allow important directories explicitly
+Allow: /blog/
+Allow: /images/
